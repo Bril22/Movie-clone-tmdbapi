@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>https://www.themoviedb.com/...</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=https://www.themoviedb.org/">
+    <!-- style bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- glyphicon bootstrap -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="nav_wrapper">
+            <a class="logo" href="http://localhost:3000/">
+                <img src="img/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" width="154" height="20" alt="#">
+            </a>
+                <div class="dropdown" style="float: left;">
+                    <button class="dropbtn">Movies</button>
+                        <div class="dropdown-content" style="left:0;">
+                            <a href="#">Popular</a>
+                            <a href="#">Now Playing</a>
+                            <a href="#">Upcoming</a>
+                            <a href="#">Top Rated</a>
+                       </div>
+                </div>
+                <div class="dropdown" style="float: left;">
+                    <button class="dropbtn">TV Shows</button>
+                        <div class="dropdown-content" style="left:0;">
+                            <a href="#">Popular</a>
+                            <a href="#">Airing Today</a>
+                            <a href="#">On TV</a>
+                            <a href="#">Top Rated</a>
+                        </div>
+                </div>
+                <div class="dropdown" style="float: left;">
+                    <button class="dropbtn">People</button>
+                        <div class="dropdown-content" style="left:0;">
+                            <a href="#">Popular People</a>
+                        </div>
+                </div>
+                <div class="dropdown" style="float: left;">
+                    <button class="dropbtn">More</button>
+                        <div class="dropdown-content" style="left:0;">
+                            <a href="#">Discussion</a>
+                            <a href="#">Leaderboard</a>
+                            <a href="#">Support</a>
+                            <a href="#">API</a>
+                        </div>
+                </div>
+        </div>
+            <div>           
+                <div class="dropdown">
+                    <button class="dropbtn"><a href=""><i class="fa fa-plus" style="font-size:20px;color:white"></i></a></button>
+                        <div class="dropdown-content">
+                            <a href="#">Add New Movie</a>
+                            <a href="#">Add TV Show</a>                       
+                        </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href=""><i class="fa fa-language" style="font-size:20px;color:white"></i></a></button>
+                        <div class="dropdown-content">
+                            <a href="#">Language</a>                      
+                        </div>
+                </div>        
+                <div class="dropdown">
+                    <button class="dropbtn"><a href=""><i class="fa fa-bell-o" style="font-size:20px;color:white"></i></a></button>
+                        <div class="dropdown-content">
+                            <a href="#">Unread Notification</a>                       
+                        </div>
+                </div>        
+                <div class="dropdown">
+                    <button class="dropbtn"><a href=""><i class="fa fa-user" style="font-size:20px;color:white"></i></a></button>
+                        <div class="dropdown-content">
+                            <a href="#">Profile and Setting</a>                       
+                        </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href=""><i class="fa fa-search" style="font-size:20px;color:white"></i></a></button>
+                        <div class="dropdown-content">
+                            <form style="width:1680px;" class="search-text" action="action_page.php">
+                                <input type="text" placeholder="Search for a movie, tv show, person..." name="search">
+                            </form>        
+                        </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- movie info -->
+    <section>
+        <div class="movie-info">
+            <div class="movie-detail">
+                <h1 class="movie-name"></h1>
+                <p class="genres"></p>
+                <p class="des"></p>
+                <p class="starring"><span>Top Billed Cast:&nbsp&nbsp</span></p>
+            </div>
+        </div>
+
+        <!-- video clips -->
+        <div class="trailer-container">
+            <h1 class="heading">More Movie</h1>
+        </div>
+
+        <!-- recommendations -->
+        <div class="recommendations">
+            <h1 class="heading">Recommendation</h1>
+            <div class="recommendations-container"></div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper-footer">
+            <a class="footer-img" href=""><img src="img/tmdb-logo-footer.de1a664e.svg" href="http://localhost:3000/" /></a>
+            <div class="footer-text">
+                <h2>The Movie Database Clone</h2>
+                <p>Developed by: Brilian Natanael Zega</p>
+                <a style="text-decoration:none; color:#fff" href="https://github.com/Bril22/Movie-Clone-TMDb-API"><i class="fa fa-github" aria-hidden="true"></i>My Github</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/home.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/about.js"></script>
+    
+</body>
+</html>
