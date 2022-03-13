@@ -1,1 +1,1 @@
-## Movie website clone
+## Movie App clone (TMDb API)
